@@ -5,3 +5,4 @@ Elementary blog based on the framework of Laravel
 2. Create a mysql-blog database
 3. Add a database user blog with the password 12345678
 4. Run the sql file sql / blog.sql
+5. Run command: <code>php artisan migrate</code>
