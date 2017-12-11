@@ -25,4 +25,11 @@ Route::post('admin/blog/save/{id}', 'Admin\BlogController@save');
 Route::get('admin/blog/edit/{id}', 'Admin\BlogController@edit');
 Route::get('admin/blog/delete/{id}', 'Admin\BlogController@delete');
 
+Route::get('admin/user', 'Admin\UserController@index');
+Route::get('admin/user/edit', 'Admin\UserController@create');
+Route::get('admin/user/create', 'Admin\UserController@create');
+Route::post('admin/user/save/{id}', 'Admin\UserController@save');
+Route::get('admin/user/edit/{id}', 'Admin\UserController@edit');
+Route::get('admin/user/delete/{id}', 'Admin\UserController@delete');
+
 

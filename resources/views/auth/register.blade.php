@@ -10,7 +10,9 @@
                 <div class="panel-body">
                     <form class="form-horizontal" method="POST" action="{{ route('register') }}">
                         {{ csrf_field() }}
-
+                        @if(Request::capture()->has('friend'))
+                        <input type="hidden" name="friend_id" value="{{ (int)Request::capture()->get('friend') }}">
+                        @endif
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                             <label for="name" class="col-md-4 control-label">Name</label>
 

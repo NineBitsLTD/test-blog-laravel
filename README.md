@@ -1,7 +1,12 @@
 # test-blog-laravel
 Elementary blog based on the framework of Laravel
 
-1. Open access to the public folder by http / https
-2. Create a mysql-blog database
-3. Add a database user blog with the password 12345678
-4. Run the sql file sql / blog.sql
+## Install
+* Open access to the public folder by http / https
+* Create a mysql-blog database
+* Add a database user: blog, password: 12345678
+* Run the sql file sql/blog.sql
+* Run command: <code>php artisan migrate</code>
+
+<a target="_blank" href="http://blog.test.intellectual.systems">Demo.</a>
+<a target="_blank" href="http://blog.test.intellectual.systems?friend=1">Demo link on the registration, with refferal.</a>

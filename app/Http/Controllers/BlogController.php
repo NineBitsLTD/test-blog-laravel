@@ -25,7 +25,8 @@ class BlogController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {        
+    {
+        if(Request::capture()->has('friend')) return redirect()->route('register', ['friend' => Request::capture()->get('friend')]);
         Paginator::currentPageResolver(function() {
             return Request::capture()->has('page')?(int)Request::capture()->get('page'):0;
         });
